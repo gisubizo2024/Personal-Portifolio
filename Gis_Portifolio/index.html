@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* General Layout */
+        body {
+            background-color: #111; /* Black background */
+            color: #fff; /* White text */
+            line-height: 1.6;
+            font-size: 16px;
+            height: auto;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #333;
+            padding: 1rem;
+            z-index: 1;
+            position: sticky;
+            top: 0;
+
+        }
+
+        nav a {
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            transition: background 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            background: #ff7e5f; /* Hover effect */
+            border-radius: 5px;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 4rem 2rem;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #fff;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        h2:hover {
+            transform: scale(1.05);
+            size: 2.5px;
+        }
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 150px;
+        }
+
+        .card {
+            background-color: #1a1a1a;
+            width: 320px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 1.5rem;
+            color: #bbb;
+            gap: 300px;
+        }
+
+        .card-content h3 {
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            color: #fff;
+        }
+
+        .card-content p {
+            font-size: 1rem;
+        }
+
+        /* Home Section Specific */
+        #home .intro {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        #home .intro img {
+            width: 45%;
+            height: 500px;
+            object-fit: contain;
+            border-radius: 50%;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        #home .intro .text {
+            width: 50%;
+        }
+
+        #home .intro h3 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        h2{
+            text-align: center;
+            color: #ff7e5f;
+        }
+
+        #home .intro p {
+            font-size: 1.2rem;
+            color: #bbb;
+            line-height: 1.8;
+        }
+
+        /* Footer */
+        /* footer {
+            background-color: #ff7e5f; 
+            text-align: center;
+            padding: 1.5rem;
+            color: #fff;
+        } */
+
+        /* footer p {
+            font-size: 1rem;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+         */
+
+          /* Footer */
+          footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        .social-links {
+            margin-bottom: 1rem;
+        }
+        .social-links a {
+            color: #fff;
+            font-size: 1.5rem;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <!-- <h2>Welcome to My Portfolio</h2> -->
+
+        <!-- First Content Block: Introduction with Image -->
+        <div class="intro">
+            <div class="text">
+                <h3>About Me</h3>
+                <p>Hello! I'm a passionate web developer with a love for creating dynamic, responsive, and visually appealing websites. I specialize in front-end technologies like HTML, CSS, and JavaScript, but I'm also proficient in back-end technologies such as Node.js and MongoDB. My goal is to craft user-friendly applications and solve complex problems with clean code.</p>
+            </div>
+            <img src="imgs/AUG_3688.png" alt="My Photo">
+        </div>
+
+        <!-- Additional Content (cards) -->
+        <div class="card-container">
+            <div class="card">
+                <img src="imgs/first.jpg" alt="Home Image 2">
+                <div class="card-content">
+                    <h3>Skills & Expertise</h3>
+                    <p>I specialize in HTML, CSS, JavaScript, and React for front-end development. Additionally, I work with Node.js and MongoDB for back-end development.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imgs/first1.jpg" alt="Home Image 3">
+                <div class="card-content">
+                    <h3>Problem Solving</h3>
+                    <p>My focus is on solving problems through code. I take pride in writing clean, efficient, and maintainable code while delivering user-friendly experiences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="imgs/th.jpg" alt="About Photo 1">
+                <div class="card-content">
+                    <h3>Background</h3>
+                    <p>I have a background in software engineering with over 3 years of experience building web applications. I'm always looking to improve my skills and learn new technologies.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imgs/ntm.jpg" alt="About Photo 2">
+                <div class="card-content">
+                    <h3>Technologies I Use</h3>
+                    <p>My primary stack includes HTML, CSS, another I wish to learn is JavaScript, React, Node.js, MongoDB, and Git. I’m constantly exploring new frameworks and libraries to improve my workflow.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imgs/tech.jpg" alt="About Photo 3">
+                <div class="card-content">
+                    <h3>My Vision</h3>
+                    <p>I aim to make a meaningful impact by creating solutions that improve people's lives and experiences. I believe technology can transform the world for the better.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects 2023</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="imgs/images (1).jpg" alt="Project 1">
+                <div class="card-content">
+                    <h3>Project 1: E-commerce Website</h3>
+                    <p>This project features an e-commerce website built with React, Node.js, and MongoDB, with features such as product listings, shopping cart, and user authentication.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imgs/images (2).jpg" alt="Project 2">
+                <div class="card-content">
+                    <h3>Project 2: Portfolio Website</h3>
+                    <p>This is my personal portfolio website where I showcase my skills, projects, and background. It is built with HTML, CSS, and JavaScript.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imgs/images (3).jpg" alt="Project 3">
+                <div class="card-content">
+                    <h3>Project 3: Task Manager</h3>
+                    <p>A task manager app that allows users to create, update, and delete tasks. Built using Node.js, Express, and MongoDB for back-end functionality.</p>
+                </div>
+            </div>
+        </div>
+
+        <h2>Projects 2024</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="imgs/download (4).jpg" alt="Project 1">
+                <div class="card-content">
+                    <h3>Project 1: E-commerce Website</h3>
+                    <p>This project features an e-commerce website built with React, Node.js, and MongoDB, with features such as product listings, shopping cart, and user authentication.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imgs/images.jpg" alt="Project 2">
+                <div class="card-content">
+                    <h3>Project 2: Portfolio Website</h3>
+                    <p>This is my personal portfolio website where I showcase my skills, projects, and background. It is built with HTML, CSS, and JavaScript.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imgs/download (3).jpg" alt="Project 3">
+                <div class="card-content">
+                    <h3>Project 3: Task Manager</h3>
+                    <p>A task manager app that allows users to create, update, and delete tasks. Built using Node.js, Express, and MongoDB for back-end functionality.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="card-container">
+            <div class="card">
+                <div class="card-content">
+                    <h3>Email</h3>
+                    <p>You can reach me at <a href="https://mail.google.com/mail/u/0/#inbox">gisubizo135@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <h3>LinkedIn</h3>
+                    <p>Connect with me on <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="social-links">
+            <a href="#" target="_blank">LinkedIn</a>
+            <a href="https://github.com/gisubizo2024/TTA_Projects.git" target="_blank">GitHub</a>
+            <a href="https://x.com/home" target="_blank">Twitter</a>
+        </div>
+        <p>&copy; Copyright 2024 GISUBIZO, All right Reserved.</p>
+    </footer>
+    </body>
+</html>
